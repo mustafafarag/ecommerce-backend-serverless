@@ -1,0 +1,21 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+
+# Logs and debugging files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files (for cross-platform compatibility)
+.DS_Store
+Thumbs.db
+
+# Editor-specific files (if using VS Code, JetBrains, etc.)
+.vscode/
+.idea/

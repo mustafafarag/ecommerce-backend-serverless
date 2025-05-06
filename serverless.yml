@@ -1,0 +1,34 @@
+service: ecommerce-api
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: eu-central-1
+  environment:
+    PORT: ${env:PORT}
+    MONGODB_URL: ${env:MONGODB_URL}
+    JWT_SECRET: ${env:JWT_SECRET}
+    MAIL_ID: ${env:MAIL_ID}
+    MP: ${env:MP}
+    REDIS_URL: ${env:REDIS_URL}
+    CLOUDINARY_CLOUD_NAME: ${env:CLOUDINARY_CLOUD_NAME}
+    CLOUDINARY_API_KEY: ${env:CLOUDINARY_API_KEY}
+    CLOUDINARY_API_SECRET: ${env:CLOUDINARY_API_SECRET}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - logs:*
+      Resource: "*"
+
+functions:
+  app:
+    handler: handler.handler
+    events:
+      - http:
+          path: /{proxy+}
+          method: any
+          cors: true
+
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-offline
