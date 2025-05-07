@@ -2,6 +2,11 @@
 
 A cloud-native eCommerce backend built with Node.js, Express, MongoDB Atlas, and Redis (on AWS EC2). The project is deployed using the Serverless Framework to AWS Lambda and API Gateway, with full support for local development via serverless-offline.
 
+> 🚀 **Migration Highlight**  
+> This project started as a traditional locally-hosted Node.js + Express API, then was fully **migrated to a serverless architecture** using the **Serverless Framework**.  
+> It now runs on **AWS Lambda** and **API Gateway**, with Redis hosted on **AWS EC2** and MongoDB managed via **MongoDB Atlas**.  
+> The setup supports full local development as well as production-grade cloud deployment.
+
 ---
 
 ## ✨ Features
@@ -55,9 +60,3 @@ npm run dev        # Start with nodemon (if configured)
 sls deploy         # Deploy to AWS
 sls remove         # Remove all deployed AWS resources
 ```
-
----
-
-## 📜 License
-
-MIT © 2025 Mustafa Farag
