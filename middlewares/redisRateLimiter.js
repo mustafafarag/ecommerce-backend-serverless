@@ -2,7 +2,8 @@ const { redisClient } = require('../config/redis')
 
 const rateLimiter = (keyPrefix, limit = 5, windowInSeconds = 900) => {
   return async (req, res, next) => {
-    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.ip
+    const ip = req.headers['x-forwarded-for'] ? req.headers['x-forwarded-for'].split(',')[0].trim() : req.connection.remoteAddress || req.ip
+    console.log(`[RateLimiter] IP Detected: ${ip}`)
     const key = `${keyPrefix}:${ip}`
 
     try {
