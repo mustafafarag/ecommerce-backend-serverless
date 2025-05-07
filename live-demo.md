@@ -10,7 +10,7 @@ This guide explains how to test the project in two ways — locally using `serve
 | Environment | Method                        | Tools Used                |
 |-------------|-------------------------------|---------------------------|
 | Local       | Run locally using `sls offline` | Node.js, Redis Localy, MongoDB Atlas |
-| Cloud       | Deploy to AWS using `sls deploy` | Serverless Framework, AWS CLI, AWS Lambda, API Gateway |
+| Cloud       | Deploy to AWS using `sls deploy` | Serverless Framework, AWS CLI, AWS Lambda, MongoDB Atlas, API Gateway |
 
 ## ⚙️ LOCAL DEMO (Using serverless-offline)
 
@@ -71,10 +71,6 @@ http://localhost:3000/dev
   "password": "securePassword123"
 }
 ```
-
-#### 📦 Get All Products
-
-**GET** `http://localhost:3000/dev/api/product`
 
 ---
 
