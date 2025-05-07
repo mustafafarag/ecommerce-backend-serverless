@@ -1,4 +1,4 @@
-# 🛒 Serverless eCommerce Backend (Node.js + MongoDB + Redis)
+# 🛒 Serverless eCommerce Backend (Node.js + MongoDB + Redis + Lamda + API Gateway )
 
 A fully serverless eCommerce API built with **Node.js** and **Express**, using **MongoDB Atlas** for data storage and **Redis on AWS EC2** for rate limiting.
 
