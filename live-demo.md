@@ -132,6 +132,15 @@ https://your-api-id.execute-api.eu-central-1.amazonaws.com/dev
 
 ---
 
+### 🧼 Cleanup
+
+To remove all deployed AWS resources (Lambda, API Gateway, IAM, CloudWatch, etc.):
+
+```bash
+sls remove --aws-profile serverlessuser
+```
+---
+
 ## 📬 Contact
 
 Built by **Mustafa Farag**  
