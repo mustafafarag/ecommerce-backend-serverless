@@ -5,12 +5,20 @@ This guide explains how to test the project in two ways — locally using `serve
 ### ❓ What is Serverless Framework?
 [Serverless Framework](https://www.serverless.com/framework/docs) is an open-source tool that simplifies deploying and managing serverless applications. It automates provisioning of resources like Lambda, API Gateway, and IAM using simple YAML configuration.
 
+
 ---
 
 | Environment | Method                        | Tools Used                |
 |-------------|-------------------------------|---------------------------|
 | Local       | Run locally using `sls offline` | Node.js, Redis Localy, MongoDB Atlas |
 | Cloud       | Deploy to AWS using `sls deploy` | Serverless Framework, AWS CLI, AWS Lambda, MongoDB Atlas, API Gateway |
+
+
+
+> 🛠️ **Quick Command Reference**:
+> - `sls deploy`: Deploys your app to AWS Lambda and API Gateway
+> - `sls offline`: Runs your app locally as if it's on AWS (simulated Lambda + API Gateway)
+
 
 ## ⚙️ LOCAL DEMO (Using serverless-offline)
 
