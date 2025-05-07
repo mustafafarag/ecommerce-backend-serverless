@@ -65,7 +65,7 @@ http://localhost:3000/dev
 
 ```env
 PORT=5000
-MONGODB_URL=mongodb+srv://your_user:your_pass@cluster.mongodb.net/dbname
+MONGODB_URL=MONGODB_URL=mongodb+srv://<USERNAME>:<PASSWORD>@cluster.mongodb.net/<DBNAME>
 JWT_SECRET=your_jwt_secret
 REDIS_URL=redis://localhost:6379
 
