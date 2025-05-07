@@ -1,10 +1,12 @@
 # 🛒 Serverless eCommerce Backend (Node.js + MongoDB + Redis)
 
-A cloud-native eCommerce backend built with Node.js, Express, MongoDB Atlas, and Redis (on AWS EC2),
-The project is deployed using the Serverless Framework to AWS Lambda and API Gateway, with full support for local development via serverless-offline.
+A fully serverless eCommerce API built with **Node.js** and **Express**, using **MongoDB Atlas** for data storage and **Redis on AWS EC2** for rate limiting.
+
+The backend is deployed on **AWS Lambda** and exposed via **API Gateway**, all managed through the **Serverless Framework**. It also supports full local development and testing via `serverless-offline`.
+
 
 > 🚀 **Migration Highlight**  
-> This project started as a traditional locally-hosted Node.js + Express API, based on this repo:  
+> This project started as a traditional locally-hosted Node.js + Express API, MongoDB, Redis based on this repo:  
 > 👉 [ecommerce-backend-api (local version)](https://github.com/mustafafarag/ecommerce-backend-api)  
 >  
 > It was then fully **migrated to a serverless architecture** using the **Serverless Framework**.  
