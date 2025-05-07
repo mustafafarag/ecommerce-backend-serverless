@@ -1,8 +1,13 @@
 # 🚀 Live Demo: Serverless eCommerce Backend API
 
-This guide shows how to test the project both **locally** and **in the cloud** using Serverless Framework on AWS.
+This guide explains how to test the project in two ways — locally using `serverless-offline`, and by deploying it to the AWS cloud using the Serverless Framework, which provisions AWS Lambda, API Gateway, and other resources.
 
 ---
+
+| Environment | Method                        | Tools Used                |
+|-------------|-------------------------------|---------------------------|
+| Local       | Run locally using `sls offline` | Node.js, Redis Localy, MongoDB Atlas |
+| Cloud       | Deploy to AWS using `sls deploy` | Serverless Framework, AWS CLI, AWS Lambda, API Gateway |
 
 ## ⚙️ LOCAL DEMO (Using serverless-offline)
 
@@ -26,6 +31,14 @@ API will be live at:
 ```
 http://localhost:3000/dev
 ```
+
+> ℹ️ **Note**: The port (3000) can be changed by editing `serverless.yml`:
+>
+> ```yaml
+> custom:
+>   serverless-offline:
+>     httpPort: 8000  # Change this to any other port if needed
+> ```
 
 ---
 
@@ -80,7 +93,7 @@ CLOUDINARY_API_SECRET=xxx
 
 ---
 
-## ☁️ CLOUD DEPLOYMENT (Using AWS Lambda + API Gateway)
+## ☁️ CLOUD DEPLOYMENT (Using AWS Lambda + API Gateway , Redis Installed on AWS EC2)
 
 ### 🚀 Deploy to AWS Free Tier
 
@@ -102,7 +115,7 @@ https://your-api-id.execute-api.eu-central-1.amazonaws.com/dev
 ## 📬 Contact
 
 Built by **Mustafa Farag**  
-🔗 [GitHub](https://github.com/mustafafarag) | 💼 [LinkedIn](https://www.linkedin.com/in/your-profile)
+🔗 [GitHub](https://github.com/mustafafarag) | 💼 [LinkedIn](https://www.linkedin.com/in/mustafafarag15/)
 
 ---
 
