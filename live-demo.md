@@ -2,6 +2,9 @@
 
 This guide explains how to test the project in two ways — locally using `serverless-offline`, and by deploying it to the AWS cloud using the Serverless Framework, which provisions AWS Lambda, API Gateway, and other resources.
 
+### ❓ What is Serverless Framework?
+[Serverless Framework](https://www.serverless.com/framework/docs) is an open-source tool that simplifies deploying and managing serverless applications. It automates provisioning of resources like Lambda, API Gateway, and IAM using simple YAML configuration.
+
 ---
 
 | Environment | Method                        | Tools Used                |
