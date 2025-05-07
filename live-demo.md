@@ -1,6 +1,6 @@
 # 🚀 Live Demo: Serverless eCommerce Backend API
 
-This guide shows how to test the project both **locally** and **in the cloud** using Serverless Framework and AWS Lambda.
+This guide shows how to test the project both **locally** and **in the cloud** using Serverless Framework on AWS.
 
 ---
 
@@ -21,6 +21,7 @@ npm run local
 ```
 
 API will be live at:
+
 
 ```
 http://localhost:3000/dev
