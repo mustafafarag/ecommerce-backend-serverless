@@ -102,6 +102,19 @@ CLOUDINARY_API_SECRET=xxx
 
 ## ☁️ CLOUD DEPLOYMENT (Using AWS Lambda + API Gateway , Redis Installed on AWS EC2)
 
+### 🔧 Prerequisites
+
+- ✅ An AWS EC2 instance with Redis installed and running (port 6379 open to Lambda)
+- ✅ AWS CLI installed on your machine
+
+> 📝 **Note**: Before deploying, you need to configure AWS credentials for your IAM user. Run the following:
+>
+> ```bash
+> aws configure --profile serverlessuser
+> ```
+> This sets up the `serverlessuser` profile used by Serverless Framework to deploy and manage AWS resources.
+
+
 ### 🚀 Deploy to AWS Free Tier
 
 ```bash
