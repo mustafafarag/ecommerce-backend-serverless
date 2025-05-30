@@ -61,8 +61,6 @@ See full instructions for both local and cloud usage in the live demo guide:
 
 ```bash
 npm run local      # Run using serverless-offline
-npm run start      # Start the app with node
-npm run dev        # Start with nodemon (if configured)
 sls deploy         # Deploy to AWS
 sls remove         # Remove all deployed AWS resources
 ```
