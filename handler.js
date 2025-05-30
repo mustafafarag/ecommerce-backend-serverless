@@ -1,7 +1,7 @@
 const serverless = require('serverless-http')
 const dotenv = require('dotenv')
 const dbConnect = require('./config/dbConnect')
-const connectRedis = require('./config/redis')
+const { connectRedis } = require('./config/redis')
 const app = require('./index')
 
 // Load environment variables from .env file
