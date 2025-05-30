@@ -4,7 +4,6 @@
 
 // Importing the required modules
 const express = require ("express")
-const dbConnect = require("./config/dbConnect")
 const app = express()
 const swaggerDocs = require('./swagger')
 const dotenv = require ("dotenv").config()
@@ -20,12 +19,10 @@ const categoryRouter = require("./routes/productcategoryRoute");
 const blogcategoryRouter = require("./routes/blogCatRoute");
 const brandRouter = require("./routes/brandRoute");
 const couponRouter = require("./routes/couponRoute");
-const { connectRedis } = require('./config/redis')
+
 
 // Using the middlewares and routes
 app.use(cookieParser())
-dbConnect()
-connectRedis()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(morgan("dev")); 
