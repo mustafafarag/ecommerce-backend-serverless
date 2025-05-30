@@ -1,4 +1,5 @@
 service: ecommerce-api
+useDotenv: true
 
 provider:
   name: aws
@@ -23,6 +24,10 @@ provider:
 functions:
   app:
     handler: handler.handler
+    timeout: 30  # optional: increase timeout if needed
+    memorySize: 512  # optional: optimize based on cold start behavior
+    reservedConcurrency: 4      # hard cap on concurrent executions
+#    provisionedConcurrency: 2    # pre-warm 2 instances (cold-start prevention) WARNING: This will incur additional costs
     events:
       - http:
           path: /{proxy+}
@@ -30,8 +35,7 @@ functions:
           cors: true
 
 plugins:
-  - serverless-dotenv-plugin
-  - serverless-offline
+  - serverless-offline # For local development
 
 
 custom:
