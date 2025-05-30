@@ -10,14 +10,15 @@ This guide explains how to test the project in two ways — locally using `serve
 
 | Environment | Method                        | Tools Used                |
 |-------------|-------------------------------|---------------------------|
-| Local       | Run locally using `sls offline` | Node.js, Redis Localy, MongoDB Atlas |
+| Local       | Run locally using `serverless offline start` | Node.js, Redis Localy, MongoDB Atlas |
 | Cloud       | Deploy to AWS using `sls deploy` | Serverless Framework, AWS CLI, AWS Lambda, MongoDB Atlas, API Gateway |
 
 
 
 > 🛠️ **Quick Command Reference**:
+> - `serverless offline start`: Runs your app locally as if it's on AWS (simulated Lambda + API Gateway)
 > - `sls deploy`: Deploys your app to AWS Lambda and API Gateway
-> - `sls offline`: Runs your app locally as if it's on AWS (simulated Lambda + API Gateway)
+
 
 
 ## ⚙️ LOCAL DEMO (Using serverless-offline)
@@ -27,13 +28,19 @@ This guide explains how to test the project in two ways — locally using `serve
 - ✅ Node.js 18+
 - ✅ Redis running locally (`redis-server`) or via Docker
 - ✅ MongoDB Atlas connection string
-- ✅ `.env` file configured properly
+- ✅ `.env` file configured properly (For Redis & MongoDB Atlas)
 
 ### ▶️ Start Locally
 
 ```bash
 npm install
+
+### Running the App Locally
+# Option 1: Directly using npm script
 npm run local
+
+# Option 2: Using serverless-offline directly
+npx serverless offline start
 ```
 
 API will be live at:
